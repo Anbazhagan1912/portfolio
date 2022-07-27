@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    color: #59054C;
+    position: relative;
+    background-blend-mode: color-dodge;
+    overflow: hidden;
+}
+#int{
+    color: #59054C;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+    
+    /* position: fixed; */
+}
+.menu{
+    height: 500px;
+    width: 330px;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    padding: 20px;
+    border: 1px solid #59054C;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-400px);
+    transition: 300ms ease;
+
+}
+#ham{
+    cursor: pointer;
+}
+
+.menu ul{
+    padding: 20px;
+}
+
+.menu li{
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 800;
+    cursor: pointer ;
+}
+.a{  padding: 10px;
+    text-decoration: none;
+    position: relative;
+    color: #59054C;
+}
+.a::before{
+    content: "";
+    height: 2px;
+    width: 10px;
+    position: absolute;
+    bottom: 0;
+    background: #59054C;
+    opacity: 0.5;
+    transition: 300ms ease;
+}
+a:hover::before{
+    width: 100px;
+}
+.logo h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* nav end */
+
+.content{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 300;
+    font-style:  italic;
+    font-family: 'Inter', sans-serif;
+    margin-top: 100px;
+}
+
+.content p{
+    color: #333;
+    font-family: "Inter";
+    margin-left: 150px;
+}
+
+/* container over */
+
+.About{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+}
+.About .content {
+    display: block;
+    padding: 20px;
+    opacity: 0;
+}
+.About .content h1{
+    font-size: 50px;
+    color: #59054C;
+}
+
+.About .content p{
+    font-size: 30px;
+    font-weight: 500;
+    width: 700px;
+    padding: 20px;
+}
+
+.About .content button{
+    font-size: 25px;
+    width: 200px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #59054C;
+    font-weight:lighter;
+    font-style: italic;
+    color: #59054C;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 170px;
+    position: relative;
+    transition: 300ms ease;
+    z-index: 2;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #59054C;
+    opacity: 0.4;
+    transform: translateX(200px);
+    transition: 300ms ease;
+    z-index: 1;
+}
+
+
+.contact:hover::before{
+    transform: translateX(0);
+}
+
+/* About over */
+
+.skils{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 300px; */
+}
+.content{
+    height: 100%;
+}
+
+
+
+.skils  h1{
+    font-size: 50px;
+    color: #59054C;
+    margin-top: 10px;
+    font-family: "Inter";
+    font-weight: 100;
+    font-style: italic;
+}
+/* .skils .content .development{
+    position: absolute;
+    top:10%;
+} */
+
+.skils  .development h1{
+    margin-top: 10px;
+    font-size: 40px;
+    padding: 10px;
+
+}
+.skils  .development p{
+    font-size: 25px;
+    padding: 30px;
+    width: 600px;
+    font-family: "Inter";
+    color: #333;
+}
+.skils .content .desing{
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    padding: 30px;
+}
+.skils .content .desing h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.skils .content .desing p{
+    font-size: 25px;
+    padding: 40px;
+    width: 600px;
+}
+
+.skils .content .development{
+    margin-top: 20px;
+    padding: 20px;
+}
+.skils .content .desing{
+    margin-bottom: 200px;
+    padding: 20px;
+}
+
+
+/* Skils over */
+
+.projects{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  
+}
+.projects .head{
+    /* margin-top: px; */
+    font-size: 40px;
+    font-family: "Inter";
+    font-weight: lighter;
+    font-style: italic;
+    color: #59054C;
+    padding: 25px;
+    /* position: absolute;
+    top: -10%; */
+  
+}
+
+.hole{
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+.pro1{
+    display: flex;
+}
+.pro2{
+    display: flex;
+}
+.project{
+    /* display: flex; */
+
+    margin-left: 10px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #59054C;
+}
+
+#icon{
+    padding: 10px;
+    font-size: 25px;
+    color: #59054C;
+}
+
+
+.project h1{
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: "Inter";
+    color: #59054C;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.project h1::before{
+    content: "";
+    height: 2px;
+    width: 10px;
+    position: absolute;
+    bottom: 0;
+    background: #59054C;
+    opacity: 0.5;
+    transition: 300ms ease;
+}
+.project h1:hover::before{
+    width: 100px;
+}
+.project p{
+    padding: 10px;
+    font-family: "Inter";
+    color: #333;
+    font-weight: 900;
+}
+
+.project .res{
+    font-size: 12px;
+}
+
+/* Pojects over */
+
+.contacts{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+    height: 500px;
+    width: 700px;
+    position: relative;
+
+}
+
+.con{
+    /* border: 1px solid rebeccapurple; */
+    padding: 20px;
+}
+
+.con h1{
+    padding: 10px;
+    font-size: 40px;
+    font-family: "Inter";
+    font-style: italic;
+    color: #59054C;
+    font-weight: 100;
+}
+
+.details{
+    padding: 10px;
+    font-size: 25px;
+}
+.details p{
+    font-family: "inter";
+    color: #333;
+}
+
+.email{
+    padding: 10px;
+    margin-top: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    background-color: transparent;
+    border: 1px solid #59054C;
+    color: #59054C;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.email::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #59054C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(150px);
+    transform: rotate(20deg);
+    overflow: hidden;
+    transition: 300ms ease;
+    opacity: 0.2;
+}
+
+.email:hover::before{
+    transform: translateX(0);
+}
+
+.contacts .links{
+    position: absolute;
+    /* right: 0; */
+    display: flex;
+    bottom: 10%;
+    /* flex-direction: column; */
+    overflow: hidden;
+}
+#soc{
+    padding: 20px;
+    color: #59054C;
+    font-size: 25px;
+    opacity: 0.4;
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+#soc:hover{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        position: relative;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .menu{
+        height: 620px;
+        width: 310px;
+        position: absolute;
+        top: 3%;
+        padding: 20px;
+        border: 1px solid #59054C;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-400px);
+        transition: 300ms ease;
+        background-color: #1111;
+        color: #111;
+    }
+    .menu li{
+        padding: 20px;
+        font-size: 15px;
+        font-family: "Inter";
+        font-weight: 800;
+        cursor: pointer ;
+    }
+    a{
+        /* color: #111; */
+    }
+    /* a::before{
+        content: "";
+        height: 2px;
+        width: 10px;
+        position: absolute;
+        bottom: 0;
+        background: #111;
+        opacity: 0.5;
+        transition: 300ms ease;
+    } */
+   
+    .content{
+       
+    }
+   .content h1{
+    font-size: 40px;
+    margin-bottom: 200px;
+    
+   }
+   .content p{
+    margin-left: 150px;
+    margin-bottom: 40px;
+    position: absolute;
+    
+}
+  
+    .About .content h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: absolute;
+        top: -5%;
+        left: 2%;
+    }
+    .About .content p{
+        font-size: 18px;
+        position: absolute;
+        top: 20%;
+        left: -40%;
+        width: 300px;
+        padding-left: 10px;
+    }
+    .About .content button{
+        position: absolute;
+        top: 60%;
+        left: -40%;
+        font-size: 13px;
+        width: 100px;
+    }
+    .skils h1{
+        font-size: 35px;
+
+    }
+    .skils   .development p{
+       font-size: 18px;
+       width: 300px;
+       font-family: "Inter";
+       color: #333;
+       font-weight: 500;
+    
+    }
+    .skils  .development h1{
+     font-size: 25px;
+    }
+  
+
+  
+  .projects .head{
+    font-size: 20px;
+  }
+  .hole{
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .pro1{
+    display: flex;
+    flex-direction: column;
+   
+   }
+   .pro2{
+    display: flex;
+    flex-direction: column;
+   }
+   .project{
+    height: 240px;
+    width: 240px;
+    margin-top: 10px;
+   }
+   .project h1{
+    font-size: 20px;
+   }
+   .project p{
+     font-size: 16px;
+   }
+   .contacts{
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con h1{
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Inter";
+    font-style: italic;
+    color: #59054C;
+    font-weight: 100;
+}
+.details{
+    padding: 10px;
+    font-size: 18px;
+}
+.email{
+    font-size: 14px;
+}
+
+}
